@@ -1,0 +1,11 @@
+# Colors might need adjustment
+
+# class                 border  bground text    indicator child_border
+client.focused          #9146D2 #6272A4 #F8F8F2 #b586f3   #b586f3
+client.focused_inactive #44475A #44475A #F8F8F2 #50467e   #50467e
+client.unfocused        #282836 #282836 #BFBFBF #282836   #282836
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5569   #FF5569
+client.placeholder      #282836 #282836 #F8F8F2 #282836   #282836
+
+client.background       #11111688
+

@@ -1,0 +1,40 @@
+set $scrot_base "scrot"
+
+mode "screenshot" {
+    bindsym Escape mode "default"
+    bindsym $mod+p mode "default"
+    bindsym Return mode "default"
+    bindsym BackSpace mode "default"
+
+    bindsym c mode "screenshot > clipboard"
+    bindsym f mode "screenshot > file"
+}
+
+# TODO: set up notify-send, pls
+mode "screenshot > clipboard" {
+    bindsym Escape mode "default"
+    bindsym $mod+p mode "default"
+    bindsym Return mode "default"
+    bindsym BackSpace mode "screenshot"
+
+    bindsym 1 exec --no-startup-id sleep 0.1 && scrot -M 0 - | xclip -selection clipboard -target image/png; mode "default"
+    bindsym 2 exec --no-startup-id sleep 0.1 && scrot -M 1 - | xclip -selection clipboard -target image/png; mode "default"
+    bindsym a exec --no-startup-id sleep 0.1 && scrot - | xclip -selection clipboard -target image/png; mode "default"
+    bindsym s exec --no-startup-id scrot -s - | xclip -selection clipboard -target image/png; mode "default"
+}
+
+mode "screenshot > file" {
+    bindsym Escape mode "default"
+    bindsym $mod+p mode "default"
+    bindsym Return mode "default"
+    bindsym BackSpace mode "screenshot"
+
+    bindsym 1 exec --no-startup-id sleep 0.1 && scrot -M 0 ~/Pictures/Screenshots/`date +"%Y-%m-%d-%H%M%S.png"`; mode "default"
+    bindsym 2 exec --no-startup-id sleep 0.1 && scrot -M 1 ~/Pictures/Screenshots/`date +"%Y-%m-%d-%H%M%S.png"`; mode "default"
+    bindsym a exec --no-startup-id sleep 0.1 && scrot - | xclip -selection clipboard -target image/png; mode "default"
+    bindsym s exec --no-startup-id scrot -s ~/Pictures/Screenshots/`date +"%Y-%m-%d-%H%M%S.png"`; mode "default"
+}
+
+bindsym $mod+p mode "screenshot"
+
+#bindsym $mod+$alt+s exec scrot ~/Pictures/Screenshots/`date +"%Y-%m-%d-%H%M%S.png"` && notify-send 'Screenshot taken' 'sdfsfsgs'

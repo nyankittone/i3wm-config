@@ -1,0 +1,5 @@
+
+exec --no-startup-id aplay ~/Sounds/Startup/'PlayStation 1 Startup.wav'
+exec_always pkill -9 picom; sleep 0.1; picom
+exec polybar main
+exec polybar secondary

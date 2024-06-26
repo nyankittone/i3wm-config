@@ -1,0 +1,24 @@
+# i3 config file for setting up gaps for the workspaces, and their keybinds.
+
+# disabling window title bars, and setting window border size
+for_window [workspace="^B[0-9]$"] border pixel 2 
+for_window [workspace="^A[0-9]$"] border pixel 3
+
+# setting up gaps
+gaps inner 12
+gaps outer 12
+workspace A1 gaps inner 20
+workspace A1 gaps outer 20
+workspace A2 gaps inner 20
+workspace A2 gaps outer 20
+workspace A3 gaps inner 20
+workspace A3 gaps outer 20
+workspace A4 gaps inner 20
+workspace A4 gaps outer 20
+workspace A5 gaps inner 20
+workspace A5 gaps outer 20
+
+# making borders not get drawn on workspaces with no gaps
+smart_borders no_gaps
+
+#bindsym $mod+g gaps inner current toggle 24; gaps outer current toggle 6

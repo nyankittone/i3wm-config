@@ -1,0 +1,15 @@
+mode "power" {
+    bindsym Escape mode "default"
+    bindsym $mod+Shift+e mode "default"
+    bindsym $mod+e mode "default"
+    bindsym Return mode "default"
+
+    bindsym l exec --no-startup-id xscreensaver-command -lock; mode "default"
+    bindsym e exec --no-startup-id i3-msg exit; mode "default"
+    bindsym p exec --no-startup-id sudo poweroff; mode "default"
+    bindsym r exec --no-startup-id sudo reboot; mode "default"
+    bindsym s exec --no-startup-id sudo suspend; mode "default"
+    bindsym h exec --no-startup-id sudo hibernate; mode "default"
+}
+
+bindsym $mod+Shift+e mode "power"

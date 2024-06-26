@@ -1,0 +1,20 @@
+mode "run program" {
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+    bindsym $mod+x mode "default"
+
+    bindsym c exec --no-startup-id dmenu_run -h 30 -m 0 -p 'Run Command: ' -fn cantarell:size=12; mode "default"
+    bindsym a exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -p "Run Application: " -h 30 -i -m 0 -fn cantarell:size=12'; mode "default"
+    bindsym b exec firefox-esr; mode "default"
+    bindsym d exec discord; mode "default"
+    bindsym m exec prismlauncher; mode "default"
+    bindsym r exec retroarch; mode "default"
+    bindsym t exec $TERMINAL -T btm -e btm; mode "default"
+    bindsym g exec gimp; mode "default"
+    bindsym f exec Dn-FamiTracker; mode "default"
+    bindsym o exec obs; mode "default"
+    bindsym s exec steam; mode "default"
+}
+
+bindsym $mod+x mode "run program"
+

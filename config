@@ -1,0 +1,45 @@
+# i3 config file (v4)
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+
+# This config has been split apart into multiple different files to try to give it a separation
+# of concerns. I'm not really sure how good I've done of that, but nevertheless, this is how it is.
+
+# Due to limitations in i3's config language, all global variables used in this config must be
+# placed here in the main file, instead of in another file to keep with this idea. Oh well.
+
+# Loading vital components of the graphical environment, like polybar and a compositor
+include components_init
+
+# Actually setting globals here
+set $mod Mod4
+set $alt Mod1
+set $mon1 primary
+set $mon2 DP-4
+
+# And here it is - the wall of includes!
+include workspaces
+include gaps
+include window_management
+include resize
+include theme
+include volume_control
+include modes/execute
+include modes/power
+include modes/screenshot
+
+# Tying up some loose ends that I couldn't organize neatly. Here's we're just setting up fonts, and
+# some keybionds for closing windows, reloading i3's config, and restarting it in-placce,
+# respectively.
+font pango:cantarell 12
+for_window [workspace=B.] font pango:cantarell 7
+force_display_urgency_hint 500 ms
+bindsym $mod+q kill
+bindsym $mod+Shift+s reload
+bindsym $mod+Shift+d restart
+
+# take a screenshot of all screens
+bindsym $mod+$alt+s exec scrot ~/Pictures/Screenshots/`date +"%Y-%m-%d-%H%M%S.png"` && notify-send 'Screenshot taken' 'sdfsfsgs'
+
+# Auto-starting some programs, and asssigning them workspaces to start on
+include app_config
+

@@ -1,0 +1,12 @@
+# i3 config file for resizing windows.
+bindsym $mod+$alt+h resize shrink width 5 px or 5 ppt
+bindsym $mod+$alt+j resize grow height 5 px or 5 ppt
+bindsym $mod+$alt+k resize shrink height 5 px or 5 ppt
+bindsym $mod+$alt+l resize grow width 5 px or 5 ppt
+
+# same bindings, but for the arrow keys
+bindsym $mod+$alt+Left resize shrink width 5 px or 5 ppt
+bindsym $mod+$alt+Down resize grow height 5 px or 5 ppt
+bindsym $mod+$alt+Up resize shrink height 5 px or 5 ppt
+bindsym $mod+$alt+Right resize grow width 5 px or 5 ppt
+

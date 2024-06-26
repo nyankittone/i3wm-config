@@ -1,0 +1,18 @@
+# Config file for i3 that configures what apps go to what workspaces, and what apps are started
+# automatically.
+
+bindsym $mod+Return exec $TERMINAL
+#bindsym $mod+Shift+m exec $TERMINAL -T btm -e btm
+
+# workspace assignments and/or to make things float by default
+for_window [title="btm"] floating enable
+assign [class="firefox"] A2
+assign [title="^.*Discord$"] B3
+assign [title="^.*Discord Updater$"] B3
+
+exec --no-startup-id i3-msg 'workspace B2'
+exec sleep 0.1 && firefox-esr
+exec $TERMINAL
+exec --no-startup-id sleep 1 && i3-msg 'workspace A2'
+exec discord
+

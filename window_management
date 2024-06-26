@@ -25,13 +25,14 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # spliting horizontally and vertically respectfully.
-bindsym $mod+a split h
-bindsym $mod+s split v
+bindsym $mod+c split h
+bindsym $mod+v split v
 
 # toggle fullscreen on focused window
-bindsym $mod+z fullscreen toggle
+bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
+# Keybinds for stcking and tabbed layouts are disabled, as I literally never use them.
 #bindsym $mod+a layout stacking
 #bindsym $mod+s layout tabbed
 bindsym $mod+d layout toggle split
@@ -41,6 +42,6 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # Focus the parent and child windows respecively
-bindsym $mod+y focus parent
-bindsym $mod+m focus child
+bindsym $mod+u focus parent
+bindsym $mod+n focus child
 

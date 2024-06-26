@@ -12,24 +12,25 @@ workspace B3 output $mon2
 workspace B4 output $mon2
 workspace B5 output $mon2
 
-bindsym $mod+4 workspace A1
-bindsym $mod+r workspace A2
-bindsym $mod+f workspace A3
-bindsym $mod+v workspace A4
-bindsym $mod+c workspace A5
-bindsym $mod+5 workspace B1
-bindsym $mod+t workspace B2
-bindsym $mod+g workspace B3
-bindsym $mod+b workspace B4
-bindsym $mod+n workspace B5
+bindsym $mod+3 workspace A1
+bindsym $mod+4 workspace A2
+bindsym $mod+5 workspace A3
+bindsym $mod+6 workspace A4
+bindsym $mod+7 workspace A5
+bindsym $mod+w workspace B1
+bindsym $mod+e workspace B2
+bindsym $mod+r workspace B3
+bindsym $mod+t workspace B4
+bindsym $mod+y workspace B5
 
-bindsym $mod+Shift+4 move container to workspace A1
-bindsym $mod+Shift+r move container to workspace A2
-bindsym $mod+Shift+f move container to workspace A3
-bindsym $mod+Shift+v move container to workspace A4
-bindsym $mod+Shift+c move container to workspace A5
-bindsym $mod+Shift+5 move container to workspace B1
-bindsym $mod+Shift+t move container to workspace B2
-bindsym $mod+Shift+g move container to workspace B3
-bindsym $mod+Shift+b move container to workspace B4
-bindsym $mod+Shift+n move container to workspace B5
+bindsym $mod+Shift+3 move container to workspace A1
+bindsym $mod+Shift+4 move container to workspace A2
+bindsym $mod+Shift+5 move container to workspace A3
+bindsym $mod+Shift+6 move container to workspace A4
+bindsym $mod+Shift+7 move container to workspace A5
+bindsym $mod+Shift+w move container to workspace B1
+bindsym $mod+Shift+e move container to workspace B2
+bindsym $mod+Shift+r move container to workspace B3
+bindsym $mod+Shift+t move container to workspace B4
+bindsym $mod+Shift+y move container to workspace B5
+

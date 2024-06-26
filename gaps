@@ -21,4 +21,4 @@ workspace A5 gaps outer 20
 # making borders not get drawn on workspaces with no gaps
 smart_borders no_gaps
 
-#bindsym $mod+g gaps inner current toggle 24; gaps outer current toggle 6
+bindsym $mod+g gaps inner current toggle 24; gaps outer current toggle 6

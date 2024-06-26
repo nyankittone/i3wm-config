@@ -33,12 +33,9 @@ include modes/screenshot
 font pango:cantarell 12
 for_window [workspace=B.] font pango:cantarell 7
 force_display_urgency_hint 500 ms
-bindsym $mod+q kill
-bindsym $mod+Shift+s reload
-bindsym $mod+Shift+d restart
-
-# take a screenshot of all screens
-bindsym $mod+$alt+s exec scrot ~/Pictures/Screenshots/`date +"%Y-%m-%d-%H%M%S.png"` && notify-send 'Screenshot taken' 'sdfsfsgs'
+bindsym $mod+Shift+q kill
+bindsym $mod+a reload
+bindsym $mod+q restart
 
 # Auto-starting some programs, and asssigning them workspaces to start on
 include app_config

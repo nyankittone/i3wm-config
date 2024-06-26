@@ -12,4 +12,5 @@ mode "power" {
     bindsym h exec --no-startup-id sudo hibernate; mode "default"
 }
 
-bindsym $mod+Shift+e mode "power"
+bindsym $mod+Shift+d mode "power"
+

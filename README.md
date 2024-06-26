@@ -15,4 +15,5 @@ Uuuh, yeah, that's it. I guess look at the LICENSE file? 🤷‍♀️ (it's pub
 + I want to write a "configuration" script, that will update the config with stuff appropriate
   for a specific monitor setup automatically, or something. Right now, that must be done manually.
   Bleh.
++ Add variables for workspace names in the config
 

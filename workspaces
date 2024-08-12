@@ -37,3 +37,6 @@ bindsym $mod+Shift+y move container to workspace B5
 bindsym $mod+z workspace prev
 bindsym $mod+x workspace next
 
+bindsym $mod+Shift+z move container to workspace prev
+bindsym $mod+Shift+x move container to workspace next
+

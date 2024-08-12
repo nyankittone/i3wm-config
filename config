@@ -28,7 +28,7 @@ include modes/power
 include modes/screenshot
 
 # Tying up some loose ends that I couldn't organize neatly. Here's we're just setting up fonts, and
-# some keybionds for closing windows, reloading i3's config, and restarting it in-placce,
+# some keybinds for closing windows, reloading i3's config, and restarting it in-place,
 # respectively.
 font pango:cantarell 12
 for_window [workspace=B.] font pango:cantarell 7
@@ -37,6 +37,6 @@ bindsym $mod+Shift+q kill
 bindsym $mod+a reload
 bindsym $mod+q restart
 
-# Auto-starting some programs, and asssigning them workspaces to start on
+# Auto-starting some programs, and assigning them workspaces to start on
 include app_config
 

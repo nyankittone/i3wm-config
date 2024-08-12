@@ -24,7 +24,7 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# spliting horizontally and vertically respectfully.
+# splitting horizontally and vertically respectfully.
 bindsym $mod+c split h
 bindsym $mod+v split v
 
@@ -32,7 +32,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-# Keybinds for stcking and tabbed layouts are disabled, as I literally never use them.
+# Keybinds for stacking and tabbed layouts are disabled, as I literally never use them.
 #bindsym $mod+a layout stacking
 #bindsym $mod+s layout tabbed
 bindsym $mod+d layout toggle split
@@ -41,7 +41,7 @@ bindsym $mod+d layout toggle split
 bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
-# Focus the parent and child windows respecively
+# Focus the parent and child windows respectively
 bindsym $mod+u focus parent
 bindsym $mod+n focus child
 

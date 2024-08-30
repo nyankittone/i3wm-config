@@ -7,9 +7,6 @@
 # Due to limitations in i3's config language, all global variables used in this config must be
 # placed here in the main file, instead of in another file to keep with this idea. Oh well.
 
-# Loading vital components of the graphical environment, like polybar and a compositor
-include components_init
-
 # Actually setting globals here
 set $mod Mod4
 set $alt Mod1
@@ -38,5 +35,5 @@ bindsym $mod+a reload
 bindsym $mod+q restart
 
 # Auto-starting some programs, and assigning them workspaces to start on
-include app_config
+include autostart
 

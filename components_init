@@ -1,4 +1,0 @@
-
-exec --no-startup-id aplay ~/Sounds/Startup/'PlayStation 1 Startup.wav'
-exec waybar
-

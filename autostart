@@ -9,6 +9,9 @@ assign [class="firefox"] A1
 assign [title="^.*Discord$"] B2
 assign [title="^.*Discord Updater$"] B2
 
+exec --no-startup-id aplay ~/Sounds/Startup/'PlayStation 1 Startup.wav'
+exec waybar
+
 exec --no-startup-id i3-msg 'workspace B1'
 exec sleep 0.1 && firefox-esr
 exec $TERMINAL

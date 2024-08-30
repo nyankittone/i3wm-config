@@ -17,10 +17,10 @@ mode "screenshot > clipboard" {
     bindsym Return mode "default"
     bindsym BackSpace mode "screenshot"
 
-    bindsym 1 exec --no-startup-id sleep 0.1 && scrot -M 0 - | xclip -selection clipboard -target image/png; mode "default"
-    bindsym 2 exec --no-startup-id sleep 0.1 && scrot -M 1 - | xclip -selection clipboard -target image/png; mode "default"
-    bindsym a exec --no-startup-id sleep 0.1 && scrot - | xclip -selection clipboard -target image/png; mode "default"
-    bindsym s exec --no-startup-id scrot -s - | xclip -selection clipboard -target image/png; mode "default"
+    bindsym 1 exec --no-startup-id sleep 0.1 && take_screenshot.sh clipboard 1; mode "default"
+    bindsym 2 exec --no-startup-id sleep 0.1 && take_screenshot.sh clipboard 2; mode "default"
+    bindsym a exec --no-startup-id sleep 0.1 && take_screenshot.sh clipboard all; mode "default"
+    bindsym s exec --no-startup-id sleep 0.1 && take_screenshot.sh clipboard select; mode "default"
 }
 
 mode "screenshot > file" {
@@ -29,10 +29,10 @@ mode "screenshot > file" {
     bindsym Return mode "default"
     bindsym BackSpace mode "screenshot"
 
-    bindsym 1 exec --no-startup-id sleep 0.1 && scrot -M 0 ~/Pictures/Screenshots/`date +"%Y-%m-%d-%H%M%S.png"`; mode "default"
-    bindsym 2 exec --no-startup-id sleep 0.1 && scrot -M 1 ~/Pictures/Screenshots/`date +"%Y-%m-%d-%H%M%S.png"`; mode "default"
-    bindsym a exec --no-startup-id sleep 0.1 && scrot - | xclip -selection clipboard -target image/png; mode "default"
-    bindsym s exec --no-startup-id scrot -s ~/Pictures/Screenshots/`date +"%Y-%m-%d-%H%M%S.png"`; mode "default"
+    bindsym 1 exec --no-startup-id sleep 0.1 && take_screenshot.sh file 1; mode "default"
+    bindsym 2 exec --no-startup-id sleep 0.1 && take_screenshot.sh file 2; mode "default"
+    bindsym a exec --no-startup-id sleep 0.1 && take_screenshot.sh file all; mode "default"
+    bindsym s exec --no-startup-id sleep 0.1 && take_screenshot.sh file select; mode "default"
 }
 
 bindsym $mod+p mode "screenshot"

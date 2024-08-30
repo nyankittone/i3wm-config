@@ -14,6 +14,7 @@ set $mon1 HDMI-A-1
 set $mon2 DP-3
 
 # And here it is - the wall of includes!
+include monitor_setup
 include workspaces
 include gaps
 include window_management
@@ -27,8 +28,7 @@ include modes/screenshot
 # Tying up some loose ends that I couldn't organize neatly. Here's we're just setting up fonts, and
 # some keybinds for closing windows, reloading i3's config, and restarting it in-place,
 # respectively.
-font pango:cantarell 12
-for_window [workspace=B.] font pango:cantarell 7
+font pango:cantarell 7
 force_display_urgency_hint 500 ms
 bindsym $mod+Shift+q kill
 bindsym $mod+a reload

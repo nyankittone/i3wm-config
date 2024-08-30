@@ -13,8 +13,8 @@ include components_init
 # Actually setting globals here
 set $mod Mod4
 set $alt Mod1
-set $mon1 primary
-set $mon2 DP-4
+set $mon1 HDMI-A-1
+set $mon2 DP-3
 
 # And here it is - the wall of includes!
 include workspaces

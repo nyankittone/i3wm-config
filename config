@@ -12,8 +12,10 @@ set $mod Mod4
 set $alt Mod1
 set $mon1 HDMI-A-1
 set $mon2 DP-3
+set $mouse "Logitech G305"
 
 # And here it is - the wall of includes!
+include input_setup
 include monitor_setup
 include workspaces
 include gaps

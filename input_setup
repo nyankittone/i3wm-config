@@ -1,0 +1,8 @@
+input * {
+    accel_profile adaptive
+}
+
+input $mouse {
+    accel_profile flat
+}
+

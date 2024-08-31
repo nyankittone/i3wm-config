@@ -10,7 +10,7 @@ assign [title="^.*Discord$"] B2
 assign [title="^.*Discord Updater$"] B2
 
 exec --no-startup-id dunst
-exec --no-startup-id select_backgrounds ~/Pictures/Wallpaper\ Poop/Used\ Walls
+exec --no-startup-id select_background ~/Pictures/Wallpaper\ Poop/Used\ Walls
 exec --no-startup-id aplay ~/Sounds/Startup/'PlayStation 1 Startup.wav'
 exec --no-startup-id gammastep
 exec waybar
